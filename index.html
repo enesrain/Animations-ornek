@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations-site</title>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 100vh;
+    border: 2px solid white;
+}
+.div1 {
+    background-color: purple;
+    color: white;
+    position: relative;
+}
+.div1 h1 {
+    position: absolute;
+    top: -200px;
+    animation: a1 2s forwards 0s ease;
+}
+.div1 p {
+    position: absolute;
+    left: -3000px;
+    animation: a2 2s forwards 0s ease;
+}
+
+ @keyframes a1 {
+
+    to {
+        top: 100px;
+    }    
+} 
+@keyframes a2 {
+    to {
+        left: 50px;
+    }
+}
+/*--------------------------------------*/
+
+
+
+
+
+
+.div2 {
+    color: purple;
+}
+.div2 h1 {
+  animation: b1 2s forwards 0s ease-out;
+}
+.div2 p {
+    animation: b2 2s forwards 0s ease-in;
+}
+
+
+@keyframes b1 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes b2 {
+    to {
+        transform: scale(0.5);
+    }
+}
+
+
+/*------------------------------------------------------*/
+
+.div3 {
+    background-color: purple;
+    color: white;
+}
+.div3 a {
+    padding: 70px;
+    background-color: white;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+.div3 a:hover {
+    position: relative;
+    top: -50px;
+    left: -100px;
+    transform: skew(70deg);
+    transform: rotate(45deg);
+ 
+}
+
+
+</style>
+
+</head>
+<body>
+    
+
+<div class="div1">
+    <h1>Page1</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe maxime dolor quod nam rem praesentium itaque perferendis 
+        tempore nobis labore modi nemo, error facere eaque minima fugiat facilis ratione? Iusto.</p>
+</div>
+
+
+<div class="div2">
+    <h1>Page2</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe maxime dolor quod nam rem praesentium itaque perferendis 
+        tempore nobis labore modi nemo, error facere eaque minima fugiat facilis ratione? Iusto.</p>
+</div>
+
+<div class="div3"><a href=""></a></div>
+
+
+</body>
+</html>
